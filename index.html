@@ -17,16 +17,29 @@
         <!-- Load D3 -->
         <script src="https://d3js.org/d3.v6.min.js"></script>
 
+        <!-- Load TopoJSON -->
+        <script src="https://unpkg.com/topojson@3"></script>
+
         <!-- Load Data -->
         <script defer src="script.js"></script>
 
     </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row" id="topRow">
                 <div class="column">
                     <h1>Airport Connections</h1>
                  </div>
+             </div>
+             <div class="row">
+                <div class="column">
+                    <form>
+                        <input type="radio" id="force" name="display" value="force" checked>
+                        <label for="force">Force</label>
+                        <input type="radio" id="map" name="display" value="map">
+                        <label for="map">Map</label>    
+                    </form>
+                </div>
              </div>
              <div class="row">
                  <div class="column">
@@ -37,5 +50,20 @@
              </div>
          </div>
     </body>
+
+
+    <body>
+                <div class="tooltip"></div>
+        </div>
+        
+        <div class="chart"></div>
+        </div>
+       
+      </body>
+      
+      </html>
+    
+
+
 
 </html>
